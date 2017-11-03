@@ -1,5 +1,6 @@
   import java.util.Scanner;
-  public class Assignment_5 {
+  public class Assignment_5_gourdy {
+    public static String [] list = {};
     public static void main (String[]args) {
     
       Scanner scan = new Scanner (System.in);
@@ -7,7 +8,7 @@
      
       int pivotIndex;
       
-      
+      String[] substr = new String[3];
       
       
       System.out.println("Enter the first string: ");
@@ -19,13 +20,19 @@
       String pivot = scan.nextLine();
       System.out.println(pivot);
       
-      if(!pivot.isEmpty() || original.contains(pivot)) {
+      if(!pivot.isEmpty() && original.contains(pivot)) {
         int pivotLength = pivot.length();
       
         pivotIndex = original.indexOf(pivot);
-        System.out.print(original.substring(pivotIndex+pivotLength));
-        System.out.print(pivot);
-        System.out.print(original.substring(0, pivotIndex));
+        
+        substr[0] = original.substring(0, pivotIndex);
+        substr[1] = pivot;
+        substr[2] = original.substring(pivotIndex+pivotLength);
+        
+        for(int i = substr.length; i > 0; i--) {
+          System.out.print(substr[i-1]);
+        }
+
       }
       else
         System.out.println("Error: Invalid Input");
