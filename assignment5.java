@@ -20,7 +20,7 @@
       String pivot = scan.nextLine();
       System.out.println(pivot);
       
-      if(!pivot.isEmpty() && original.contains(pivot)) {
+      if(!(original.isEmpty() || pivot.isEmpty()) && original.contains(pivot)) {
         int pivotLength = pivot.length();
       
         pivotIndex = original.indexOf(pivot);
