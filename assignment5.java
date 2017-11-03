@@ -1,6 +1,5 @@
   import java.util.Scanner;
   public class Assignment_5 {
-    public static String [] list = {};
     public static void main (String[]args) {
     
       Scanner scan = new Scanner (System.in);
