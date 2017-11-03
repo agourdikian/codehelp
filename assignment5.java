@@ -1,5 +1,5 @@
   import java.util.Scanner;
-  public class Assignment_5_gourdy {
+  public class Assignment_5 {
     public static String [] list = {};
     public static void main (String[]args) {
     
