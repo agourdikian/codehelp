@@ -19,13 +19,17 @@
       System.out.println("Enter the pivot string: ");
       String pivot = scan.nextLine();
       System.out.println(pivot);
-      int pivotLength = pivot.length();
       
-      pivotIndex = original.indexOf(pivot);
+      if(!pivot.isEmpty() || original.contains(pivot)) {
+        int pivotLength = pivot.length();
       
+        pivotIndex = original.indexOf(pivot);
         System.out.print(original.substring(pivotIndex+pivotLength));
         System.out.print(pivot);
         System.out.print(original.substring(0, pivotIndex));
+      }
+      else
+        System.out.println("Error: Invalid Input");
         
         
       }
