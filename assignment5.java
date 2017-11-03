@@ -1,5 +1,5 @@
   import java.util.Scanner;
-  class Assignment_5 {
+  public class Assignment_5_gourdy {
     public static String [] list = {};
     public static void main (String[]args) {
     
@@ -23,12 +23,10 @@
       
       pivotIndex = original.indexOf(pivot);
       
-      for (pivotIndex|= 0){
-        System.out.print(original.substring(pivotIndex+pivotLength) + " ");
-        System.out.print(pivot + " ");
+        System.out.print(original.substring(pivotIndex+pivotLength));
+        System.out.print(pivot);
         System.out.print(original.substring(0, pivotIndex));
         
         
       }
     }
-  }
