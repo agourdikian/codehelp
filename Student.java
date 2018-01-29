@@ -32,7 +32,7 @@
   }
    
   Student(){
-   Student("None", "None", 0, 0.0);
+   this("None", "None", 0, 0.0);
   }
 
   String  toString()
