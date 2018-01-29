@@ -4,7 +4,7 @@
   last = "";
   
   private int grade,
-  id;
+   id;
   
   private double gpa; 
   
@@ -19,27 +19,26 @@
   }
    
   Student(){
-   "None", "None", 0, 0.0;
-   //Should be Student("None", "None", 0, 0.0);
+   Student("None", "None", 0, 0.0);
   }
 
   String  toString()
   { 
-    return(last + ", " + first + "\nGPA: " + gpa + "\nGrade Level: " + grade + "id #" + id ());
+    return(last + ", " + first + "\nGPA: " + gpa + "\nGrade Level: " + grade + "id # " + id);
   }
   
   if (gradeLevel >= 0 &&  gradeLevel <= 12){
-    grade = gradeLevel
+    grade = gradeLevel;
   }
   else {
-    grade = 0
+    grade = 0;
   }
   
   if (gpa >= 0.0 && gpa <= 4.5) {
     gpa = GPA;
   }
   else {
-      gpa = 0.0
+      gpa = 0.0;
   }
   
 } 
