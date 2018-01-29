@@ -15,19 +15,7 @@
     last = lastName;
     grade = gradeLevel;
     gpa = GPA;
-    id = ++idlast;
-  }
-   
-  Student(){
-   Student("None", "None", 0, 0.0);
-  }
-
-  String  toString()
-  { 
-    return(last + ", " + first + "\nGPA: " + gpa + "\nGrade Level: " + grade + "id # " + id);
-  }
-  
-  if (gradeLevel >= 0 &&  gradeLevel <= 12){
+    if (gradeLevel >= 0 &&  gradeLevel <= 12){
     grade = gradeLevel;
   }
   else {
@@ -39,6 +27,17 @@
   }
   else {
       gpa = 0.0;
+  }
+    id = ++idlast;
+  }
+   
+  Student(){
+   Student("None", "None", 0, 0.0);
+  }
+
+  String  toString()
+  { 
+    return(last + ", " + first + "\nGPA: " + gpa + "\nGrade Level: " + grade + "id # " + id);
   }
   
 } 
