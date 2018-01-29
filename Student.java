@@ -10,7 +10,7 @@
   
   private static int idlast = 0;
   
-  Student(String firstName, String lastName, int gradeLevel, double GPA){
+  public Student(String firstName, String lastName, int gradeLevel, double GPA){
     first = firstName;
     last = lastName;
     grade = gradeLevel;
@@ -31,11 +31,11 @@
     id = ++idlast;
   }
    
-  Student(){
+  public Student(){
    this("None", "None", 0, 0.0);
   }
 
-  String  toString()
+  public String  toString()
   { 
     return(last + ", " + first + "\nGPA: " + gpa + "\nGrade Level: " + grade + "id # " + id);
   }
